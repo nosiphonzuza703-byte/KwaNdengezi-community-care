@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquiry | Donate, volunteer or ask for support</title>
+    <meta name="description" content="Ask about donating, sponsoring, volunteering or getting support from Kwandengezi Community Care and get an instant answer." />
+    <meta name="keywords" content="Kwandengezi, community care, food parcels, donate, volunteer, KwaZulu-Natal NPO" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self'; base-uri 'self'; form-action 'self'" />
+    <link rel="canonical" href="https://kwandengezi-care.netlify.app/enquiry.html" />
+    <meta property="og:title" content="Enquiry | Donate, volunteer or ask for support" /><meta property="og:description" content="Ask about donating, sponsoring, volunteering or getting support from Kwandengezi Community Care and get an instant answer." /><meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <!-- Navigation to make it easier for the user to move between pages -->
+        <a href="index.html" class="brand">Kwandengezi Community Care</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="what-we-do.html">What We Do</a>
+          <a href="get-involved.html">Get Involved</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="enquiry.html" aria-current="page">Enquiry</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+<section class="page-hero"><div class="container"><h1>Make an enquiry</h1><p>Tell us how you would like to help, or what support you need.</p></div></section><main id="main" class="container content-wrap"><section class="section"><div class="form-card">
+<h2>How can we help?</h2><p>Choose your enquiry and you will see the cost and availability straight away.</p>
+<form id="enquiry-form" class="form-grid" data-validate method="POST" action="/" name="enquiry" data-netlify="true" novalidate><input type="hidden" name="form-name" value="enquiry" />
+<label for="name">Full name</label><input id="name" name="name" type="text" required minlength="2" autocomplete="name" aria-describedby="name-err" /><p class="error" id="name-err"></p><label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email" aria-describedby="email-err" /><p class="error" id="email-err"></p><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-err" /><p class="error" id="phone-err"></p>
+<label for="type">Enquiry about</label><select id="type" name="type" required aria-describedby="type-err"><option value="">Choose one</option><option value="donate">Donating</option><option value="sponsor">Partnering or sponsoring</option><option value="volunteer">Volunteering</option><option value="help">Getting support</option></select><p class="error" id="type-err"></p>
+<label for="amount">Donation amount in rand (optional)</label><input id="amount" name="amount" type="number" min="10" max="100000" inputmode="numeric" aria-describedby="amount-err" /><p class="error" id="amount-err"></p><label for="date">Preferred date (optional)</label><input id="date" name="date" type="date"  aria-describedby="date-err" /><p class="error" id="date-err"></p>
+<button class="button primary" type="submit">Send enquiry</button></form>
+<div id="result" class="result" tabindex="-1" role="status" hidden></div></div></section></main>
+    <footer class="footer"><div class="container"><p>© 2026 Kwandengezi Community Care</p><p>Care in action.</p></div></footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

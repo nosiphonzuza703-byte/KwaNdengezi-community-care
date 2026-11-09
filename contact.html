@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us | Kwandengezi Community Care</title>
+    <meta name="description" content="Contact Kwandengezi Community Care by email, phone or the message form, and find us on the map." />
+    <meta name="keywords" content="Kwandengezi, community care, food parcels, donate, volunteer, KwaZulu-Natal NPO" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self'; base-uri 'self'; form-action 'self'" />
+    <link rel="canonical" href="https://kwandengezi-care.netlify.app/contact.html" />
+    <meta property="og:title" content="Contact us | Kwandengezi Community Care" /><meta property="og:description" content="Contact Kwandengezi Community Care by email, phone or the message form, and find us on the map." /><meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <!-- Navigation to make it easier for the user to move between pages -->
+        <a href="index.html" class="brand">Kwandengezi Community Care</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="what-we-do.html">What We Do</a>
+          <a href="get-involved.html">Get Involved</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="enquiry.html">Enquiry</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+<section class="page-hero"><div class="container"><h1>Contact us</h1><p>We would love to hear from you and explore ways to work together.</p></div></section>
+
+    <section class="page-hero">
+      <div class="container">
+        <!-- Main page heading -->
+        <h1>Contact us</h1>
+        <p>We would love to hear from you and explore ways to work together.</p>
+      </div>
+    </section>
+
+    <main id="main" class="container content-wrap">
+      <section class="section contact-grid">
+        <div class="contact-card">
+          <h2>Get in touch</h2>
+          <p>Whether you want to volunteer, donate, or partner with us, we welcome your support.</p>
+          <ul>
+            <li><strong>Email:</strong> hello@kwandengezicare.org</li>
+            <li><strong>Phone:</strong> +2769 156 6384</li>
+            <li><strong>Location:</strong> Kwandengezi, KwaZulu-Natal</li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <!-- Contact form for users to send messages -->
+          <h2>Send a message</h2>
+          <form id="contact-form" class="form-grid" data-validate method="POST" action="/" name="contact" data-netlify="true" novalidate><input type="hidden" name="form-name" value="contact" />
+          <label for="name">Your name</label><input id="name" name="name" type="text" required minlength="2" autocomplete="name" aria-describedby="name-err" /><p class="error" id="name-err"></p><label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email" aria-describedby="email-err" /><p class="error" id="email-err"></p><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-err" /><p class="error" id="phone-err"></p>
+          <label for="type">Type of message</label><select id="type" name="type" required aria-describedby="type-err"><option value="">Choose one</option><option>General question</option><option>Request for support</option><option>Feedback</option><option>Partnership</option></select><p class="error" id="type-err"></p>
+          <label for="message">Your message</label><textarea id="message" name="message" rows="5" required minlength="20" maxlength="1000" aria-describedby="message-err"></textarea><p class="error" id="message-err"></p>
+          <button class="button primary" type="submit">Prepare message</button></form>
+          <div id="result" class="result" tabindex="-1" role="status" hidden></div>
+        </div>
+      </section>
+      <section class="section"><h2>Find us</h2><div id="map" role="region" aria-label="Map of Kwandengezi"></div><p class="meta">Map location is approximate.</p></section>
+    </main>
+    <footer class="footer"><div class="container"><p>© 2026 Kwandengezi Community Care</p><p>Let’s build stronger communities together.</p></div></footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

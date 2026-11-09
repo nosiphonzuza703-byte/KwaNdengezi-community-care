@@ -1,0 +1,156 @@
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f7f4;
+        color: #1d2d2d;
+      }
+      .container {
+        width: min(1100px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+      .hero {
+        background: linear-gradient(135deg, #1f5c3b, #163d2b);
+        color: white;
+        padding: 50px 0;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 30px;
+        align-items: center;
+      }
+      h1 {
+        font-size: clamp(2.4rem, 5vw, 4rem);
+        line-height: 1.1;
+        margin: 0 0 16px;
+      }
+      p {
+        line-height: 1.7;
+      }
+      .cta {
+        display: inline-block;
+        background: #f2b94b;
+        color: #1f2d2d;
+        text-decoration: none;
+        padding: 12px 22px;
+        border-radius: 999px;
+        font-weight: bold;
+        margin-top: 12px;
+      }
+      .image-wrap {
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 22px;
+        padding: 12px;
+      }
+      .image-wrap img {
+        width: 100%;
+        height: 440px;
+        object-fit: cover;
+        border-radius: 16px;
+        display: block;
+      }
+      .info {
+        padding: 40px 0 60px;
+      }
+      .card {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 12px 30px rgba(15, 35, 26, 0.08);
+        padding: 28px;
+        max-width: 780px;
+      }
+      .donation-section {
+        padding: 60px 0 80px;
+      }
+      .donation-card {
+        background: linear-gradient(135deg, #edf8ee, #fff8eb);
+        border: 1px solid rgba(31, 92, 59, 0.08);
+        border-radius: 28px;
+        box-shadow: 0 18px 40px rgba(23, 43, 35, 0.12);
+        padding: 36px 28px;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 22px;
+        align-items: center;
+      }
+      .donation-card h2 {
+        margin: 0 0 12px;
+        color: #163d2b;
+        font-size: clamp(2rem, 4vw, 2.8rem);
+      }
+      .donation-card p {
+        margin: 0;
+        color: #42514f;
+      }
+      .donation-actions {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .donation-actions .cta {
+        margin: 0;
+      }
+      .donation-actions .secondary {
+        background: transparent;
+        border: 1px solid rgba(31, 92, 59, 0.2);
+        color: #163d2b;
+      }
+      .mission-banner {
+        background: linear-gradient(135deg, #163d2b, #1f5c3b);
+        color: #fff;
+        padding: 44px 0;
+      }
+      .mission-banner .container {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 20px;
+        align-items: center;
+      }
+      .mission-banner h2 {
+        margin: 0 0 10px;
+        font-size: clamp(1.7rem, 3vw, 2.5rem);
+      }
+      .mission-banner p {
+        margin: 0;
+        color: rgba(255,255,255,0.82);
+      }
+      .mission-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.18);
+        border-radius: 999px;
+        padding: 12px 18px;
+        font-weight: 700;
+      }
+      .site-footer {
+        background: #0f231a;
+        color: rgba(255,255,255,0.85);
+        padding: 30px 0;
+      }
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .social-links {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .social-links a {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.85;
+      }
+      .social-links a:hover {
+        opacity: 1;
+      }
+    
+.eyebrow-home{letter-spacing:.12em;text-transform:uppercase;opacity:.9;margin-bottom:14px}
